@@ -1,0 +1,56 @@
+﻿@model MainContents
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Main Contents</h1>
+    
+
+</div>
+<br />
+
+<table width="100%" style="text-align:center">
+    <tbody>
+        <tr>
+            <td><a href="/MainContents/@Model.abilityScores.Remove(0,5).Replace("-", "")"> Ability Scores </a></td>
+            <td><a href="/MainContents/@Model.alignments.Remove(0,5)"> Alignments </a></td>
+            <td><a href="/MainContents/@Model.backgrounds.Remove(0,5)"> Backgrounds </a></td>
+        </tr>
+        <tr>
+            <td><a href="/MainContents/@Model.classes.Remove(0,5)"> Classes </a></td>
+            <td><a href="/MainContents/@Model.conditions.Remove(0,5)"> Conditions </a></td>
+            <td><a href="/MainContents/@Model.damageTypes.Remove(0,5).Replace("-", "")"> Damage Types </a></td>
+        </tr>
+        <tr>
+            <td><a href="/MainContents/@Model.equipmentCategories.Remove(0,5).Replace("-", "")"> Equipment Categories </a></td>
+            <td><a href="/MainContents/@Model.equipment.Remove(0,5)"> Equipment </a></td>
+            <td><a href="/MainContents/@Model.features.Remove(0,5)"> Features </a></td>
+        </tr>
+        <tr>
+            <td><a href="/MainContents/@Model.languages.Remove(0,5)"> Languages </a></td>
+            <td><a href="/MainContents/@Model.magicItems.Remove(0,5).Replace("-", "")"> Magic Items </a></td>
+            <td><a href="/MainContents/@Model.magicSchools.Remove(0,5).Replace("-", "")"> Magic Schools </a></td>
+        </tr>
+        <tr>
+            <td><a href="/MainContents/@Model.monsters.Remove(0,5)"> Monsters </a></td>
+            <td><a href="/MainContents/@Model.proficiencies.Remove(0,5)"> Proficiencies </a></td>
+            <td><a href="/MainContents/@Model.races.Remove(0,5)"> Races </a></td>
+        </tr>
+        <tr>
+            <td><a href="/MainContents/@Model.rules.Remove(0,5)"> Rules </a></td>
+            <td><a href="/MainContents/@Model.ruleSections.Remove(0,5).Replace("-", "")"> Rule Section </a></td>
+            <td><a href="/MainContents/@Model.skills.Remove(0,5)"> Skills </a></td>
+        </tr>
+        <tr>
+            <td><a href="/MainContents/@Model.spells.Remove(0,5)"> Spells </a></td>
+            <td><a href="/MainContents/@Model.startingEquipment.Remove(0,5).Replace("-", "")"> Starting Equipment </a></td>
+            <td><a href="/MainContents/@Model.subclasses.Remove(0,5)"> Subclasses </a></td>
+        </tr>
+        <tr>
+            <td><a href="/MainContents/@Model.subraces.Remove(0,5)"> Subraces </a></td>
+            <td><a href="/MainContents/@Model.traits.Remove(0,5)"> Traits </a></td>
+            <td><a href="/MainContents/@Model.weaponProperties.Remove(0,5).Replace("-", "")"> Weapon Properties </a></td>
+        </tr>
+    </tbody>
+</table>

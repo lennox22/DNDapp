@@ -1,0 +1,21 @@
+﻿@model Charisma
+@{
+    ViewData["Title"] = "Cha";
+}
+
+<h1>@Model.full_name</h1>
+
+<div>-@Model.name</div>
+<br />
+@foreach(string dis in Model.desc)
+            {
+                <div>:: @dis</div>
+            }
+<br />
+<br />
+<h3>Skills that use @Model.full_name</h3>
+@foreach(Skill entry in Model.skills)
+            {
+                <a href="/@entry.url.Remove(0,5)">@entry.name</a>
+                <br />
+            }

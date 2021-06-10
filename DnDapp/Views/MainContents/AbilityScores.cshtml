@@ -1,0 +1,13 @@
+﻿@model AbilityScores
+@{
+    ViewData["Title"] = "AbilityScores";
+}
+
+<h1>Ability Scores</h1>
+<br />
+<br />
+@foreach (Result menu in Model.results)
+{
+    <a href="/@menu.url.Remove(0,5).Replace("-", "")">@menu.name</a>
+    <br />
+}
